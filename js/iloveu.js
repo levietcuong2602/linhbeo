@@ -8,6 +8,12 @@ $(document).ready(function () {
     "Hôm nay đã là kỷ niệm hai năm chúng mình yêu nhau rồi đấy!",
     "Anh muốn gửi tới em béo của anh những lời yêu thương nhất",
     "Mình cùng xem lại kỷ niệm 2 năm yêu nhau nha em béo",
+    "Nụ cười em như tia nắng xuân",
+    "Êm đềm mang theo hơi ấm",
+    "Âu sầu trong anh như xóa đi chỉ bởi những nụ cười ngây ngô đáng yêu!",
+    "Cùng nhau cố gắng",
+    "Yêu nhau nhiều hơn",
+    "Em béo của đời mình nhé!",
   ];
 
   const autoShowContent = () => {
