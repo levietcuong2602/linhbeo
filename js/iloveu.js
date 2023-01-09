@@ -8,6 +8,7 @@ $(document).ready(function () {
     "Thời gian trôi nhanh thật",
     "Hôm nay đã là kỷ niệm hai năm chúng mình yêu nhau rồi đấy!",
     "Anh muốn gửi tới em béo của anh những lời yêu thương nhất",
+    "Mình cùng xem lại kỷ niệm 2 năm yêu nhau nha em béo",
   ];
 
   const autoShowContent = () => {
@@ -15,9 +16,10 @@ $(document).ready(function () {
     let index = 0;
     var idInterval = setInterval(() => {
       console.log(index);
-      if (index >= textConfigs.length) {
+      if (index >= textConfigs.length || textConfigs[index]) {
         console.log("clear timeout");
         clearInterval(idInterval);
+        return;
       }
       console.log("set content");
       textRoot.innerHTML = textConfigs[index];
@@ -32,7 +34,11 @@ $(document).ready(function () {
       $("#slideshow").css({
         opacity: 1,
       });
-      switchSlide();
+
+      var speed = 2500;
+      setInterval(() => {
+        switchSlide();
+      }, speed);
     }
   });
 });
