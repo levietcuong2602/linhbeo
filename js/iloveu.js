@@ -35,7 +35,7 @@ $(document).ready(function () {
         opacity: 1,
       });
 
-      var speed = 2500;
+      var speed = 3500;
       setInterval(() => {
         switchSlide();
       }, speed);
