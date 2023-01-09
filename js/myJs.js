@@ -1,16 +1,16 @@
 const textConfig = {
-  text1: "Hế luu Bx!",
-  text2: "Ox có điều này muốn hỏi Bx nhớ phải trả lời thật lòng nhaaa.",
-  text3: "Bx yêu Ox có phải không nào ._.",
-  text4: "Nếu Bx ko trả lời mà thoát ra tức là muốn làm vợ Ox rùi đó nha :v",
-  text5: "Khom iu Ox nha :))",
-  text6: "Iu Ox nhèo nhèo :))",
-  text7: "Sao Bx iu Ox vại. :vvvv",
-  text8: "Gửi cho Ox di <3",
-  text9: "Vì Ox đẹp try vlllll",
-  text10: "Iu Vk quá luôn ó",
-  text11:
-    "Lấy Ox lun nha Bx :DDDDDDDDDDDDD",
+  text1: "Hế nhô Hot girl của lòng tui!",
+  text2:
+    "Anh có điều này muốn hỏi em béo của anh, nhớ phải phải chọn câu trả lời đúng nhaaa.",
+  text3: "Em béo yêu anh không? Có muốn về nhà với anh không? ._.",
+  text4: "Đừng bỏ qua mà chưa bấm yêu người ta nha nha :v",
+  text5: "Em béo yêu anh :))",
+  text6: "Em béo rất rất yêu anh :))",
+  text7: "Oà! Em béo yêu mình nhiều quá. Gửi tym cho người ta đi. :vvvv",
+  text8: "Gửi <3 cho anh yêu nè",
+  text9: "Vì anh đã đẹp try lại còn siêu yêu béo nữa",
+  text10: "Yêu em béo của đời tui quá điiiii à",
+  text11: "Mình mãi bên nhau em béo nhé!!!",
   text12: "Okii lunn <3",
 };
 
