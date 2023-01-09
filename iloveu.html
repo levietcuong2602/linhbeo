@@ -2,7 +2,7 @@
 <HTML>
  
 <HEAD>
-    <TITLE> Iu Bx Nhứt Trên Đời </TITLE>
+    <TITLE> Yêu Em Béo Nhất Trên Đời </TITLE>
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
@@ -84,13 +84,194 @@
                 transform: scale(1);
             }
         }
+
+        #text-root {
+            color: white;
+            top: 20px;
+            position: absolute;
+        }
+
+        #slideshow {
+            opacity: 0;
+        }
     </style>
 </HEAD>
  
-<BODY>
+<body onload="play()" id="body-root">
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            let playedPromise = audio.play();
+            if (playedPromise) {
+                playedPromise.catch((e) => {
+                    console.log(e)
+                    if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
+                        console.log(e.name);
+                    }
+                }).then(() => {
+
+                });
+            }
+        }
+    </script>
+    <div id="text-root"></div>
+    <div id="slideshow">
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/1.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/2.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/3.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/4.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/5.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/6.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/7.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/8.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/9.jpeg"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/10.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/11.PNG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/12.PNG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/13.PNG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/14.PNG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/15.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/16.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/17.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/18.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/19.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/20.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/21.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/22.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/23.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/24.PNG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/25.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/26.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/27.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/28.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/29.JPG"
+          alt="linh-beo"
+        />
+        <img
+          class="img"
+          src="https://linhbeo.vercel.app/img/30.JPG"
+          alt="linh-beo"
+        />
+    </div>
     <div class="box">
         <canvas id="pinkboard"></canvas>
     </div>
+    <audio id="audio" src="sound/iloveu.mp3"></audio>
+    
     <script>
         /*
          * Settings
@@ -346,7 +527,24 @@
             }, 10);
         })(document.getElementById('pinkboard'));
     </script>
-</BODY>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+    ></script>
+    <script src="js/iloveu.js"></script>
+    <script src="js/slide-show.js"></script>
+</body>
  
 </HTML>
  
