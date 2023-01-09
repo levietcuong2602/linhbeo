@@ -1,7 +1,6 @@
 $(document).ready(function () {
   let entered = false;
   const textRoot = document.getElementById("text-root");
-  const slideshow = document.getElementById("slideshow");
   textRoot.innerHTML = "Nghe nhạc tí rồi bấm vào đây nhé béo";
 
   const textConfigs = [
@@ -16,7 +15,7 @@ $(document).ready(function () {
     let index = 0;
     var idInterval = setInterval(() => {
       console.log(index);
-      if (index >= textConfigs.length || textConfigs[index]) {
+      if (index >= textConfigs.length || !textConfigs[index]) {
         console.log("clear timeout");
         clearInterval(idInterval);
         return;
