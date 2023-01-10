@@ -3,6 +3,28 @@ $(document).ready(function () {
   const textRoot = document.getElementById("text-root");
   textRoot.innerHTML = "Nghe nhạc tí rồi bấm vào đây nhé béo";
 
+  let checkingId = setInterval(() => {
+    console.log("checking: ", audio.paused);
+    if (audio.paused) {
+      let playedPromise = audio.play();
+      if (playedPromise) {
+        playedPromise
+          .then(() => {
+            console.log("clear interval");
+            clearInterval(checkingId);
+          })
+          .catch((e) => {
+            console.log(e);
+            if (
+              e.name === "NotAllowedError" ||
+              e.name === "NotSupportedError"
+            ) {
+              console.log(e.name);
+            }
+          });
+      }
+    }
+  }, 1500);
   const textConfigs = [
     "Thời gian trôi nhanh thật",
     "Hôm nay đã là kỷ niệm hai năm chúng mình yêu nhau rồi đấy!",
